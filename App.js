@@ -2,37 +2,45 @@ import React from 'react';
 import { Image, View, Text } from 'react-native';
 import styled from 'styled-components/native';
 
+
+
+const Quadrado = styled.View`
+  width: 150px;
+  height:150px;
+  
+`;
+
 const Div = styled.View`
   width: 150px;
   height: 150px;
   flex-direction: row;
   justify-content: center;
 `;
-const Quadrado = styled.View`
-  width: 150px;
-  height:150px;
-  
-`;
-const Ultima = styled.View`
-width: 150px;
-height:150px;
-align-items: center;
-`;
+
 const Body = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
   background-color: black;
 `;
-const P = styled.Text`
-  color: red;
-  font-size: 20px;
+
+const Ultima = styled.View`
+width: 150px;
+height:150px;
+align-items: center;
 `;
+
+
+const P = styled.Text`
+  color: green;
+  font-size: 30px;
+`;
+
 export default function App() 
 {
   return (
     <Body>
-      <P>Galeria do Helbert Wagner Sales Lemos</P>
+      <P>Galeria de imagens do Helbert Wagner Sales Lemos</P>
       <P>Tema:Trollge</P>
       <Div>
         
@@ -48,6 +56,7 @@ export default function App()
             resizeMode='stretch'
         /></Quadrado>
       </Div>
+
       <Div>
       
       <Quadrado>
@@ -63,12 +72,14 @@ export default function App()
         /></Quadrado>
      
       </Div>
+
       <Ultima>
         <Image source={require('./images/5.png')} 
           style={{ width: 300, height: 150 }}
           resizeMode='stretch'
         />
       </Ultima>
+      
     </Body>
   );
 }
