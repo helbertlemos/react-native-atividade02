@@ -34,30 +34,30 @@ export default function App() {
       <P>Tema: trollge</P>
       <Div>
         <Quadrado>
-          <Image source={require('./src/images/1.png')} 
+          <Image source={require('./images/1.png')} 
             style={{ width: 150, height: 150 }}
             resizeMode='stretch'
         /></Quadrado>
         <Quadrado>
-          <Image source={require('./src/images/2.png')} 
+          <Image source={require('./images/2.png')} 
             style={{ width: 150, height: 150 }}
             resizeMode='stretch'
         /></Quadrado>
       </Div>
       <Div>
       <Quadrado>
-          <Image source={require('./src/images/3.jpg')} 
+          <Image source={require('./images/3.jpg')} 
             style={{ width: 150, height: 150 }}
             resizeMode='stretch'
         /></Quadrado>
         <Quadrado>
-          <Image source={require('./src/images/4.jpg')} 
+          <Image source={require('./images/4.jpg')} 
             style={{ width: 150, height: 150 }}
             resizeMode='stretch'
         /></Quadrado>
       </Div>
       <Externo>
-        <Image source={require('./src/images/zone.png')} 
+        <Image source={require('./images/5.png')} 
           style={{ width: 150, height: 150 }}
           resizeMode='stretch'
         />
